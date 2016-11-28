@@ -1,0 +1,383 @@
+@media all {
+	/*SE RECETEAN TODOS LOS PADDINGS Y MARGENES DEL LOS ELEMENTOS HTML*/
+	* { 
+	  margin: 0;
+	  padding: 0;
+	}
+
+	option {
+	  padding-left: 0.4em;
+	}
+
+	select {
+	  padding: 1px;
+	}
+
+	/*SE LE DA AL BODY FONDO BLANCO Y SE RESTABLECE EL TAMAÑO DE LA FUENTE DE LETRA, SE ALINEA EL TEXTO A LA IZQUIERDA Y SE COLOCA LA LETRA DE COLOR NEGRO*/
+	body {
+	  font-size: 100%;
+	  background: #fff;
+	  color: #000;
+	  text-align: left;
+	}
+
+	/*se establecen las etiquetas con display block*/
+	article,aside,footer,header,nav,section,
+	{
+	  display: block;
+	}
+
+	/*se establecen las etiquetas de animacion como visualizacion  en linea*/
+	audio,video
+	{
+	  display: inline-block;
+	}
+
+	/*cuando se aplique el atributo hidden no se visualizara el elemento*/
+	[hidden]{
+    	display: none;
+  	}
+
+  	/*se limpian los bordes de los elementos img*/
+  	img {
+  	  border: 0 solid;
+  	}
+
+  	/*se definene valores para margenes y espacio encima y abajo para el lemento li que es inline*/
+  	ul,ol{
+  	  margin: 0 0 1em 1em;
+  	}
+
+  	li {
+  	  line-height: 1.5em;
+  	  margin-left: 0.8em;
+  	}
+
+
+  	table {
+  	  border-collapse: collapse;
+  	  border-spacing: 0;
+  	}
+
+  	.dc-limpiar_fixeds:before {			
+    content: "";
+    display: table;
+  }
+
+  .dc-limpiar_fixeds:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+  }
+
+
+  
+ /* REJILLAS O MAS BIEN CONOCIDAS COMO GRID*/
+
+  .dc-grid {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    list-style-type: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .dc-grid_izq {			
+    float: left;
+    margin: 0;
+  }
+
+  .dc-grid_der {				
+    float: right;
+    margin: 0 0 0 -5px;
+  }
+
+  .dc-g20 {
+    width: 20%;
+  }
+
+  .dc-g40 {
+    width: 40%;
+  }
+
+  .dc-g60 {
+    width: 60%;
+  }
+
+  .dc-g80 {
+    width: 80%;
+  }
+
+  .dc-g25 {
+    width: 25%;
+  }
+
+  .dc-g33 {
+    width: 33.333%;
+  }
+
+  .dc-g50 {
+    width: 50%;
+  }
+
+  .dc-g66 {
+    width: 66.666%;
+  }
+
+  .dc-g75 {
+    width: 75%;
+  }
+
+  .dc-g38 {
+    width: 38.2%;
+  }
+
+  .dc-g62 {
+    width: 61.8%;
+  }
+
+  .dc-grid_box {				
+    padding: 0 10px;
+  }
+
+  .dc-grid_box-izq {			
+    padding: 0 10px 0 0;
+  }
+
+  .dc-grid_box-dere {			
+    padding: 0 0 0 10px;
+  }
+
+  
+
+  /*estilos para formularios con el formato input/select/textarea dentro de la etiqueta form y los lebal con fuente negrilla, con display block.*/
+
+  .dc-form{
+    overflow: hidden;
+  }
+
+  .dc-form div {
+    position: relative;
+  }
+  .dc-form label,
+  .dc-form .dc-label,
+  .dc-form .dc-mensaje {
+    position: relative;
+    line-height: 1.5;
+    display: block;
+  }
+  .dc-form .dc-mensaje {
+    clear: both;
+  }
+  
+  .dc-form input,
+  .dc-form textarea {
+    cursor: text;
+  }
+  .dc-form input,
+  .dc-form input[type="image"],
+  .dc-form input[type="radio"],
+  .dc-form input[type="checkbox"],
+  .dc-form select,
+  .dc-form label {
+    cursor: pointer;
+  }
+  .dc-form textarea {
+    overflow: auto;
+  }
+  .dc-form input.hidden,
+  .dc-form input[type=hidden] {
+    display: none !important;
+  }
+  .dc-form .dc-form_box:before,
+  .dc-form .dc-form_box-text:before,
+  .dc-form .dc-form_box-select:before,
+  .dc-form .dc-form_box-button:before {
+    content: "";
+    display: table;
+  }
+  .dc-form .dc-form_box:after,
+  .dc-form .dc-form_box-text:after,
+  .dc-form .dc-form_box-select:after,
+  .dc-form .dc-form_box-check:after,
+  .dc-form .dc-form_box-button:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  .dc-form .dc-form_box-check input:focus,
+  .dc-form .dc-form_box-check input:hover,
+  .dc-form .dc-form_box-check input:active,
+  .dc-form input[type="radio"]:focus,
+  .dc-form input[type="radio"]:hover,
+  .dc-form input[type="radio"]:active,
+  .dc-form input[type="checkbox"]:focus,
+  .dc-form input[type="checkbox"]:hover,
+  .dc-form input[type="checkbox"]:active {
+    border: 0 none;
+  }
+  .dc-form input,
+  .dc-form textarea,
+  .dc-form select {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    width: 70%;
+  }
+  .dc-form .dc-form_box-check input,
+  .dc-form input[type="radio"],
+  .dc-form input[type="checkbox"] {
+    display: inline;
+    margin-left: 0;
+    margin-right: 0.5ex;
+    width: auto;
+    height: auto;
+  }
+  .dc-form input[type="image"] {
+    border: 0;
+    display: inline;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+  .dc-form label,
+  .dc-form .dc-label {
+    box-sizing: border-box;
+  }
+  .dc-form .dc-form_box-button input {
+    display: inline;
+    overflow: visible;
+    width: auto;
+  }
+  .dc-form .dc-inline {
+    display: inline-block;
+    float: none;
+    margin-right: 0;
+    width: auto;
+    vertical-align: baseline;
+  }
+
+
+  .dc-cubrimiento-form_box {			
+    display: table;
+    table-layout: fixed;
+    width: 70%;
+  }
+  .dc-cubrimiento-form_box input,
+  .dc-cubrimiento-form_box textarea,
+  .dc-cubrimiento-form_box select {
+    width: 100%;
+  }
+  .dc-cubrimiento-form_box input[type="image"] {
+    width: auto;
+  }
+  .dc-cubrimiento-form_box input[type="radio"],
+  .dc-cubrimiento-form_box input[type="checkbox"] {
+    display: inline;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0.5ex;
+  }
+  .dc-cubrimiento-form_box label,
+  .dc-cubrimiento-form_box .dc-label {
+    display: inline;
+  }
+
+  .dc-full input,			
+  .dc-full textarea,
+  .dc-full select {
+    width: 100%;
+  }
+  .dc-full .dc-cubrimiento-form_box {
+    width: 100%;
+  }
+
+    
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      color: #444444;
+      border-top: 1px #ccc solid;
+      border-bottom: 1px #ccc solid;
+      margin: 0 0 1.35714em 0;
+    }
+    table.estrecha {
+      margin: 0 0 1.42857em 0;
+    }
+    table.estrecha th,
+    table.estrecha td {
+      padding: 0 0.5em;
+      line-height: 1.42857;
+    }
+    table.fijo {
+      table-layout: fixed;
+    }
+    table.borde_table {
+      border: 1px #ccc solid;
+    }
+    table.borde_table thead th {
+      background: #e0e0e0;
+      border-right: 1px #ccc solid;
+      border-bottom: 1px #ccc solid;
+    }
+    table.borde_table tbody th[scope="row"] {
+      background: #f0f0f0;
+    }
+    table.borde_table tbody th {
+      border-right: 1px solid #ccc;
+    }
+    table.borde_table tbody td {
+      border-right: 1px solid #ccc;
+    }
+
+
+    th,
+    td {
+      line-height: 1.5em;
+      vertical-align: top;
+      padding: 0.71429em 0.5em;
+    }
+
+    th *:first-child,
+    td *:first-child {
+      margin-top: 0;
+    }
+
+    th.nowrap,
+    td.nowrap {
+      white-space: nowrap;
+    }
+
+    thead th {
+      text-align: left;
+      color: #000;
+      border-bottom: 2px #000 solid;
+    }
+
+
+
+
+    tbody th {
+      text-align: left;
+      border-top: 1px solid #ccc;
+    }
+    tbody td {
+      text-align: left;
+      border-top: 1px solid #ccc;
+    }
+    tbody tr:hover th,
+    tbody tr:hover td {
+      background: #f8f8f8;
+    }
+  }
+}

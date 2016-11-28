@@ -1,0 +1,281 @@
+@media all {
+  
+  html * {
+    font-size: 100%;
+  }
+
+  textarea{
+    font-family: Consolas, "Lucida Console", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier;
+  }
+
+  /* font-size: 14px; */
+  body {
+    font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+    font-size  : 87.5%;
+    color      : #444444;
+  }
+
+  /*--- Headings ---------------------*/
+  h1,  h2,  h3,  h4,  h5,  h6 {
+    font-family: "Droid Sans", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color      : #161e21;
+    margin     : 0;
+  }
+
+  h1 {
+    font-size  : 48px;
+    line-height: 0.875;
+    margin     : 0 0 0.4375em 0;
+  }
+
+  h2 {
+    font-size  : 32px;
+    line-height: 1.3125;
+    margin     : 0 0 0.65625em 0;
+  }
+
+  h3 {
+    font-size  : 24px;
+    line-height: 0.875;
+    margin     : 0 0 0.875em 0;    
+  }
+
+  h4 {
+    font-size  : 21px;
+    line-height: 1;
+    margin     : 0 0 1em 0;            
+  }
+
+  h5 {
+    font-size  : 18px
+    line-height: 1.16667;
+    margin     : 0 0 1.16667em 0;
+  }
+
+  h6 {
+    font-size  : 14px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin     : 0 0 1.5em 0;
+  }
+
+  /* --- LISTAS --------------------------------- */
+  ul,  ol {
+    font-size  : 100%;
+    line-height: 1.5;
+    margin     : 0 0 1.5em 0;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  ul ul {
+    list-style-type: circle;
+    margin-top     : 0;
+  }
+
+  ol ol {
+    list-style-type: lower-latin;
+    margin-top     : 0;
+  }
+
+  ol ul {
+    list-style-type: circle;
+    margin-top     : 0;
+  }
+
+  li {
+    font-size  : 100%;
+    line-height: 1.5;
+    margin-left: 1.2em;
+  }
+
+  
+  /*--- LINKS---------------------------- */
+  a {
+    color          : #4d87c7;
+    background     : transparent;
+    text-decoration: none;
+  }
+
+  a:active {
+    outline: none;
+  }
+
+  
+  a:hover,
+  a:focus {
+    background-color: #4d87c7;
+    color           : white;
+    text-decoration : none;
+  }
+
+  /* --- IMAGENES ------------------ */
+  img{
+    margin: 0;
+  }
+
+  .flexible {
+    margin-bottom: 1.5em;
+    max-width    : 100%;
+    height       : auto;
+  }
+
+  * html .flexible {
+    width: 98%;
+  }
+
+  .bordeado {
+    margin-bottom: 1.5em;
+    border       : 2px #eee solid;
+    border       : 2px white solid;
+    box-shadow   : 0 0 3px rgba(0, 0, 0, 0.25);
+  }
+
+  
+  
+
+  .caja {
+    border-radius     : 0.3em;
+    border-width      : 1px;
+    border-style      : solid;
+    border-color      : #888;
+    box-shadow        : inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+    color             : #444;
+    color             : rgba(0, 0, 0, 0.8);
+    padding           : 1.4em;
+    margin            : 0 0 1.5em 0;
+  }
+  .caja > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .etiqueta {
+    font-family   : Verdana, Geneva, sans-serif;
+    padding       : 1px 6px 2px;
+    display       : inline-block;
+    vertical-align: middle;
+    letter-spacing: normal;
+    white-space   : nowrap;
+    border-radius : 3px;
+    background    : #06C;
+    color         : #fff;
+    font-size     : 10px;
+    line-height   : 12px;
+  }
+
+  .informacion {
+    background: #f4f4f4;
+  }
+
+  .exito {
+    background: #88cc88;
+  }
+
+  .cuidado {
+    background: #cccc88;
+  }
+
+  .error {
+    color: #cc3300;
+  }
+
+
+  .float-izq {
+    float  : left;
+    display: inline;
+    margin : 0 1em 1.5em 0;
+  }
+
+  .float-dere {
+    float  : right;
+    display: inline;
+    margin : 0 0 1.5em 1em;
+  }
+
+  .centro {
+    display   : block;
+    text-align: center;
+    margin    : 0 auto 1.5em auto;
+  }
+
+/*  -------------------TABLAS------------------*/
+  table {
+    width          : 100%;
+    border-collapse: collapse;
+    color          : #444444;
+    border-top     : 1px #ccc solid;
+    border-bottom  : 1px #ccc solid;
+    margin         : 0 0 1.3em 0;
+  }
+  table.estrecha {            
+    margin: 0 0 1.4em 0;
+  }
+  table.estrecha th,  table.estrecha td {
+    padding: 0 0.5em;
+    line-height: 1.4;
+  }
+  table.fijo {     
+    table-layout: fixed;
+  }
+  table.borde_table {   
+    border: 1px #ccc solid;
+  }
+  table.borde_table thead th {
+    background   : #e0e0e0;
+    border-right : 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
+  }
+  table.borde_table tbody th[scope="row"] {
+    background: #f0f0f0;
+  }
+  table.borde_table tbody th {
+    border-right: 1px solid #ccc;
+  }
+  table.borde_table tbody td {
+    border-right: 1px solid #ccc;
+  }
+
+
+  th, td {
+    line-height   : 1.5em;
+    vertical-align: top;
+    padding       : 0.7em 0.5em;
+  }
+
+  th *:first-child,
+  td *:first-child {
+    margin-top: 0;
+  }
+
+  th.nowrap,
+  td.nowrap {
+    white-space: nowrap;
+  }
+
+  thead th {
+    text-align   : left;
+    color        : #000;
+    border-bottom: 2px #000 solid;
+  }
+
+  
+  tbody th {
+    text-align: left;
+    border-top: 1px solid #ccc;
+  }
+  tbody td {
+    text-align: left;
+    border-top: 1px solid #ccc;
+  }
+  tbody tr:hover th,
+  tbody tr:hover td {
+    background: #f8f8f8;
+  }
+}

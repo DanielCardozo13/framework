@@ -1,0 +1,242 @@
+@media screen {
+    .dc-form {								 
+    	background        : #f4f4f4;			
+    	border            : 2px #fff solid;
+    	margin            : 0 0 1.5em 0;
+    	box-shadow        : 0 0 4px #dddddd;
+      }
+
+    .dc-form label, .dc-form .dc-label {
+    	color      : #666;
+    	line-height: 1.5;
+    	padding-top: 0.25em;
+    }
+
+    .dc-form input, .dc-form textarea, .dc-form select {
+    	border            : 1px solid #ddd;
+    	line-height       : 1em;
+    	font-family       : Arial, Helvetica, sans-serif;
+    }
+
+    .dc-form input, .dc-form textarea {
+      padding: 4px 0.3em;
+    }
+
+
+    .dc-form select {
+      padding: 3px 2px 3px 1px;
+    }
+
+    .dc-form input:focus,.dc-form select:focus,.dc-form textarea:focus,
+    .dc-form input:hover,.dc-form select:hover,.dc-form textarea:hover,
+    .dc-form input:active,.dc-form select:active,.dc-form textarea:active {
+    	border    : 1px #888 solid;
+    	background: #fff;
+    }
+
+    .dc-form input[type="image"],.dc-form input[type="radio"],.dc-form input[type="checkbox"] {
+    	border    : 0 none;
+    	background: transparent;
+    }
+
+    .dc-form .dc-requerido {		
+    	color      : #800;
+    	font-weight: bold;
+    }
+
+    .dc-form .dc-form_box-heading {
+      font-size: 1em;
+      font-size: 100%;
+      color: #000;
+      margin: 1em;
+    }
+
+    .dc-form .dc-form_box {
+      padding: 0 1em;
+      margin: 1em 0 0.5em 0;
+    }
+    /*========ERRORES=========================*/
+    .dc-form .dc-mensaje {
+      color: #666;
+      margin-bottom: 0.5em;
+    }
+    .dc-form .dc-requerido {
+      color: #800;
+      font-weight: bold;
+    }
+    .dc-form input:valid,.dc-form textarea:valid {
+      background-color: #fff;
+    }
+    .dc-form input:invalid, .dc-form textarea:invalid {
+      background-color: #fdd;
+    }
+    .dc-form .dc-error label {
+      color: #800;
+      font-weight: normal;
+    }
+    .dc-form .dc-error input, .dc-form .dc-error select, .dc-form .dc-error textarea {
+      border: 1px #800 solid;
+    }
+    .dc-form .dc-error input:hover, .dc-form .dc-error input:focus,
+    .dc-form .dc-error select:hover, .dc-form .dc-error select:focus,
+    .dc-form .dc-error textarea:hover,  .dc-form .dc-error textarea:focus {
+      border: 1px #800 solid;
+    }
+    .dc-form .dc-error .dc-mensaje {
+      color: #800;
+      font-weight: bold;
+      margin-top: 0;
+    }
+
+    /*================== BOTONES ==========================*/
+    				
+    .dc-boton,					
+    .dc-form button,.dc-form input[type="button"],.dc-form input[type="reset"],
+    .dc-form input[type="submit"] {
+      display: inline-block;
+      white-space: nowrap;
+      background-color: #eeeeee;
+      zoom: 1;
+      border: 1px solid #777;
+      border-radius: 0.2em;
+      color: #333;
+      cursor: pointer;
+      font: normal 1em/2em Arial, Helvetica;		
+      margin: 0 0.75em 0 0;
+      padding: 0 1.5em;
+      overflow: visible;
+      text-decoration: none;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    }
+    .dc-boton:hover,
+    .dc-form button:hover,
+    .dc-form input[type="button"]:hover,
+    .dc-form input[type="reset"]:hover,
+    .dc-form input[type="submit"]:hover {
+      background-color: #fafafa;
+      zoom: 1;
+    }
+    .dc-boton:active,
+    .dc-form button:active,
+    .dc-form input[type="button"]:active,
+    .dc-form input[type="reset"]:active,
+    .dc-form input[type="submit"]:active {
+      background-color: #cccccc;
+      zoom: 1;
+      position: relative;
+      top: 1px;
+    }
+    .dc-boton:focus,
+    .dc-form button:focus,
+    .dc-form input[type="button"]:focus,.dc-form input[type="reset"]:focus,.dc-form input[type="submit"]:focus {
+      background: #fafafa;
+    }
+
+    .dc-boton.dc-largo {		
+      font-size: 1.5em;
+    }
+    .dc-boton.dc-peque {		
+      font-size: 0.5em;
+    }
+
+    
+    .dc-boton.dc-ok,				
+    .dc-form button.dc-ok,
+    .dc-form input[type="button"].dc-ok,.dc-form input[type="reset"].dc-ok,.dc-form input[type="submit"].dc-ok {
+      background-color: #8888ee;
+      zoom: 1;
+      border: 1px solid #007;
+      color: white;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+    }
+    .dc-boton.dc-ok:hover,
+    .dc-form button.dc-ok:hover,
+    .dc-form input[type="button"].dc-ok:hover,.dc-form input[type="reset"].dc-ok:hover,.dc-form input[type="submit"].dc-ok:hover {
+      background-color: #8888ff;
+      zoom: 1;
+    }
+    .dc-boton.dc-ok:active,
+    .dc-form button.dc-ok:active,
+    .dc-form input[type="button"].dc-ok:active,.dc-form input[type="reset"].dc-ok:active,.dc-form input[type="submit"].dc-ok:active {
+      background-color: #8888cc;
+      zoom: 1;
+    }
+    .dc-boton.dc-ok:focus,
+    .dc-form button.dc-ok:focus,.dc-form input[type="button"].dc-ok:focus,.dc-form input[type="reset"].dc-ok:focus,.dc-form input[type="submit"].dc-ok:focus {
+      background: #88f;
+    }
+
+    
+    .dc-boton.dc-positivo,			
+    .dc-form button.dc-positivo,
+    .dc-form input[type="button"].dc-positivo,.dc-form input[type="reset"].dc-positivo,.dc-form input[type="submit"].dc-positivo {
+      background-color: #66bb66;
+      zoom: 1;
+      border: 1px solid #070;
+      color: #fff;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+    }
+    .dc-boton.dc-positivo:hover,
+    .dc-form button.dc-positivo:hover,
+    .dc-form input[type="button"].dc-positivo:hover,.dc-form input[type="reset"].dc-positivo:hover,.dc-form input[type="submit"].dc-positivo:hover {
+      background-color: #66cc66;
+      zoom: 1;
+    }
+    .dc-boton.dc-positivo:active,
+    .dc-form button.dc-positivo:active,
+    .dc-form input[type="button"].dc-positivo:active,.dc-form input[type="reset"].dc-positivo:active,.dc-form input[type="submit"].dc-positivo:active {
+      box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+      background-color: #66aa66;
+      zoom: 1;
+    }
+    .dc-boton.dc-positivo:focus,
+    .dc-form button.dc-positivo:focus,
+    .dc-form input[type="button"].dc-positivo:focus,.dc-form input[type="reset"].dc-positivo:focus,.dc-form input[type="submit"].dc-positivo:focus {
+      background: #6c6;
+    }
+
+   
+    .dc-boton.dc-peligro,
+    .dc-form button.dc-peligro,
+    .dc-form input[type="button"].dc-peligro,.dc-form input[type="reset"].dc-peligro,.dc-form input[type="submit"].dc-peligro {
+      box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
+      background-color: #bb6666;
+      zoom: 1;
+      border: 1px solid #700;
+      color: #fff;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+    }
+    .dc-boton.dc-peligro:hover,
+    .dc-form button.dc-peligro:hover,
+    .dc-form input[type="button"].dc-peligro:hover,.dc-form input[type="reset"].dc-peligro:hover,.dc-form input[type="submit"].dc-peligro:hover {
+      background-color: #cc6666;
+      zoom: 1;
+    }
+    .dc-boton.dc-peligro:active,
+    .dc-form button.dc-peligro:active,
+    .dc-form input[type="button"].dc-peligro:active,.dc-form input[type="reset"].dc-peligro:active,.dc-form input[type="submit"].dc-peligro:active {
+      box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+      background-color: #aa5555;
+      zoom: 1;
+    }
+    .dc-boton.dc-peligro:focus,
+    .dc-form button.dc-peligro:focus,
+    .dc-form input[type="button"].dc-peligro:focus,.dc-form input[type="reset"].dc-peligro:focus,.dc-form input[type="submit"].dc-peligro:focus {
+      background: #c66;
+    }
+
+
+    
+    .dc-form button[disabled],.dc-form button[disabled]:hover,
+    .dc-form input[type=button][disabled],.dc-form input[type=button][disabled]:hover,
+    .dc-form input[type=reset][disabled],.dc-form input[type=reset][disabled]:hover,
+    .dc-form input[type=submit][disabled],.dc-form input[type=submit][disabled]:hover,{
+      background: #eee;
+      color: #aaa;
+      border-color: #aaa;
+      cursor: default;
+      text-shadow: none;
+      position: static;
+      box-shadow: none;
+    }
+}

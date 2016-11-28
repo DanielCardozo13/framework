@@ -1,0 +1,118 @@
+@media all {
+	.dc-vert_nav {			/*cambiar nombre dc vert_nav por nav_vertical*/
+		margin         : 0 0 1.5em 0;
+		list-style-type: none;
+		background     : transparent;
+		border         : 0 none;
+  	}	
+
+  	.dc-vert_nav ul {
+		list-style-type: none;
+		margin         : 0;
+		padding        : 0;
+		width          : 100%;
+		overflow       : hidden;
+		border-top     : 2px #ddd solid;
+		border-bottom  : 2px #ddd solid;
+  	}
+
+  	.dc-vert_nav ul ul {
+		border: 0 none;
+  	}
+  	.dc-vert_nav li {
+		float           : left;
+		width           : 100%;
+		margin          : 0;
+		padding         : 0;
+		background-color: #fff;
+  	}
+  	.dc-vert_nav a, .dc-vert_nav a:visited {
+  	    color: #444;
+  	}
+  	.dc-vert_nav a,.dc-vert_nav span {
+		display        : block;
+		padding        : 3px 0px 3px 10%; 
+		text-decoration: none;
+		border-bottom  : 1px #ddd solid;
+  	}
+
+  	.dc-vert_nav li span {
+		display      : block;
+		font-weight  : bold;
+		border-bottom: 1px #ddd solid;
+  	}
+  	.dc-vert_nav .active {
+		background-color: #353434;
+	}
+
+  	.dc-vert_nav li.active {
+		color: #fff;
+		background-color: #353434 ;
+		font-weight: bold;
+  	}
+  	
+  	.dc-vert_nav li a,.dc-vert_nav li span {
+		width       : 90%;
+		padding-left: 10%;
+  	}
+
+  	.dc-vert_nav li a:focus,.dc-vert_nav li a:hover,.dc-vert_nav li a:active {
+		background-color: #353434;
+		color           : #fff ;
+  	}
+
+  	.dc-vert_nav li ul li a,.dc-vert_nav li ul li span {
+		width       : 80%;
+		padding-left: 20%;
+  	}
+  	.dc-vert_nav li ul li a,.dc-vert_nav li ul li a:visited {
+		background-color: #f8f8f8;
+		color           : #222;
+  	}
+  	.dc-vert_nav li ul li a:focus,.dc-vert_nav li ul li a:hover,.dc-vert_nav li ul li a:active {
+		background-color: #888;
+		color           : #fff;
+  	}
+  	.dc-vert_nav li ul li ul li a,.dc-vert_nav li ul li ul li span {
+		width       : 70%;
+		padding-left: 30%;
+  	}
+  	.dc-vert_nav li ul li ul li a,.dc-vert_nav li ul li ul li a:visited {
+		background-color: #f0f0f0;
+		color           : #222;
+  	}
+  	.dc-vert_nav li ul li ul li a:focus,.dc-vert_nav li ul li ul li a:hover,.dc-vert_nav li ul li ul li a:active {
+		background-color: #888;
+		color           : #fff;
+  	}
+
+
+  	.dc-vert_nav li ul li ul li ul li a,.dc-vert_nav li ul li ul li ul li span {
+		width       : 60%;
+		padding-left: 40%;
+  	}
+  	.dc-vert_nav li ul li ul li ul li a,.dc-vert_nav li ul li ul li ul li a:visited {
+		background-color: #e8e8e8;
+		color           : #111;
+  	}
+  	.dc-vert_nav li ul li ul li ul li a:focus,.dc-vert_nav li ul li ul li ul li a:hover,.dc-vert_nav li ul li ul li ul li a:active {
+		background-color: #888;
+		color           : #353434;
+  	}
+
+  	/*TITULO DEL NAV*/
+  	.ym-vtitle {		 /*CAMBIAR NOMBRE vtitle POR VERTICAL_TITULO*/
+		font-weight     : bold;
+		font-size       : 100%;
+		width           : 90%;
+		padding         : 3px 0px 3px 10%;
+		margin          : 0;
+		color           : #444;
+		background-color: #fff;
+		border-top      : 2px #ddd solid;
+  	}
+
+  	.ym-vtitle + ul {
+		border-top: 4px #888 solid;
+  	}
+}

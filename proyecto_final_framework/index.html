@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html  lang = "es" >
+<Head>
+  <meta  charset = "UTF-8" />
+  <Title> Documentacion DanCar </title>
+  <meta  nombre = "Descripción"  contenido = "documentacio de framwork DanCar" />
+  <meta  nombre = "autor"  contenido = "Luis Daniel Cardozo Hernandez" />
+  <!-- etiqueta meta con responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Hojas de estilo -->
+
+  <!-- hoja de estilo basica para el framework -->
+  <link  rel = "stylesheet"  href = "DANCAR/base/archivo_base.css"  type = "text/css" />
+
+  <!-- hoja de esilo especializada para los formularios -->
+  <link  rel = "stylesheet"  href = "DANCAR/formularios/formularios.css"  type = "text/css" />
+  
+  <!-- hoja de estilo para navegadores horizontales -->
+  <link  rel = "stylesheet"  href = "DANCAR/nav/horizontal_nav.css"  type = "text/css" />
+  <!-- <link  rel = "stylesheet"  href = "yaml/navigation/hlist.css"  type = "text/css" /> -->
+
+  <!-- hoja de estilo especializada para navegadores veritcales -->
+  <link  rel = "stylesheet"  href = "DANCAR/nav/nav_vertical.css"  type = "text/css" />
+
+  <!-- hojas de estilo para ptros estilos y especificos de pantalla -->
+  <link  rel = "stylesheet"  href = "DANCAR/pantalla/otros_estilos.css"  type = "text/css" />
+  <link  rel = "stylesheet"  href = "DANCAR/pantalla/pantalla.css"  type = "text/css" />
+
+
+
+  <!-- hoja de estilos propia -->
+  <!-- <link  rel = "stylesheet"  href = "css/styles.css"  tipo = "text/css" /> -->
+</Head>
+<Body>
+<header>
+  <nav id="" class="fix">
+    <div class="dc-envoltura">  <!-- ancho a utilizar de la pantalla, en el caso 80 em -->
+      <div class="dc-web_box">   <!-- padding en en la izquierda y en la derecha -->
+        <div class="dc-hori_nav">
+          <ul>
+            <li class="active link"><a href="#dancar-introduccion">Introduccion</a></li>
+            <li class="link"><a href="#dancar-grids">Grids</a></li>
+            <li class="link"><a href="#dancar-formularios">Formularios</a></li>
+            <li class="link"><a href="#dancar-navigacion">Navegación</a></li>
+            <li class="link"><a href="#dancar-tipografia">Otros estilos</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<section class="dc-envoltura dc-arriba_box">
+  <div class="dc-web_box">
+    <!-- INTRODUCCION -->
+    <article >
+      <h2 id="dancar-introduccion" class="dc-arriba_box">Introduccion</h2>
+      <div class="dc-grid">
+        <div class="dc-g25 dc-grid_izq">
+          <div class="dc-grid_box-izq">
+            <h3>Componente principales</h3>
+            <p>La hoja de estilo archivo_base.css en la carpeta DANCAR/base/ es el primer y más importante archivo de framework DANCAR. Este establece los estilos bases (por ejemplo, cuadrículas, formularios, etc.). Esta hoja de estilos es necesaria para todos los diseños basados ​​en el presente framework y no debe cambiarse.</p>
+          </div>
+        </div> 
+        <div class="dc-g75 dc-grid_der">
+          <div class="dc-grid_box-rigth">
+          <h4>Lista de tipos de clases</h4>
+          <table>
+            <thead>
+              <tr>
+                <th class="nowrap">Tipo de clases</th>
+                <th class="nowrap">Clases</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="nowrap">Diseño</td>
+                <td class="nowrap"><strong>clase principal</strong><br>
+                  <span>.dc-envoltura</span><br>
+                  <br>
+                  <strong>clases opcionales<strong><br>
+                  <span>.dc-web_box</span>
+                </td>
+                <td>Los tipos de clase de diseño define valores predeterminados para el ancho mínimo y máximo.</td>
+              </tr>
+              <tr>
+                <td class="nowrap">Grids</td>
+                <td class="nowrap"><strong>clase principal</strong><br>
+                  <span>.dc-grid</span><br>
+                  <br>
+                  <strong>clases deribadas</strong><br>
+                  <span>.dc-grid_izq</span><br>
+                  <span>.dc-gr</span><br>
+                  <span>.dc-g[xx]</span><br>
+                  <br>
+                  <strong>clases opcionales</strong><br>
+                  <span>.dc-grid_box</span><br>
+                  <span>.dc-grid_box-izq</span><br>
+                  <span>.dc-grid_box-dere</span></td>
+                <td>Los tipos de clases grids proporciona rejillas flexibles y ajustables. Las anchuras estándar de las columnas se basan en porcentajes. Opcionalmente, todas las columnas dentro de una fila de cuadrícula pueden tener la misma altura. Los tamaños de la cuadrícula se pueden ampliar o personalizar con clases CSS definidas por el usuario.</td>
+              </tr>
+              <tr>
+                <td class="nowrap">Formulario</td>
+                <td class="nowrap">
+                  <p>
+                    <strong>clase principal</strong><br>
+                    <span>.dc-form</span><br>
+                    <br>
+                    <strong>clase para filas</strong><br>
+                    <span>.dc-form_box</span><br>
+                    <span>.dc-form_box-footer</span><br>
+                    <span>.dc-cubrimiento-form_box</span><br>
+                    <br>
+                    <strong>clases opcionales</strong><br>
+                    <span>.dc-full</span><br>
+                    <span>.dc-inline</span><br>
+                    <span>.dc-requerido</span><br>
+                    <span>.dc-error</span><br>
+                    <span>.dc-mensaje</span><br>
+                    <span>.dc-label</span>
+                  </p>
+                  <p><strong>clases para botones</strong><br>
+                    <span>.dc-boton</span><br>
+                    <span>.dc-peque</span><br>
+                    <span>.dc-largo</span><br>
+                    <span>.dc-ok</span><br>
+                    <span>.dc-positivo</span><br>
+                    <span>.dc-peligro</span><br>
+                  </p>
+                </td>
+                <td>Los tipo de clases de formulario proporciona bloques de construcción estándar para el diseño de formularios.</td>
+              </tr>
+              <tr>
+                <td class="nowrap">Para elementos flotantes</td>
+                <td class="nowrap"><strong>Limpiador de flotantes</strong><br>
+                  <span>.dc-limpiar_fixeds</span><br>
+                <td> La clase <span> .dc-limpiar_fixeds </span> permite el borrado sin marcas de los elementos con estilo css float.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </article>
+    <!-- GRIDS -->
+    <article >
+      <!-- Classes GRID -->
+      <h2 id="dancar-grids" class="dc-arriba_box" >Clases de tipo Grid</h2>
+      <div class="dc-grid">
+        <div class="dc-g25 dc-grid_izq">
+          <div class="dc-grid_box-izq">
+            <p>Las grids o cuadrículas están envueltas por un elemento con la clase .dc-grid.
+
+            Para permitir un control independiente de los anchos de las grid o rejillas y columnas se utilizan las clases dc-g[xx] en donde se remplaza en los parentecis cerrados por valores de ancho y la clase .dc-grid_box  que contiene margen, relleno o valores de borde.. 
+            </p>
+          </div>
+        </div>
+        <div class="dc-g75 dc-grid_der">
+          <div class="dc-grid_box-dere">
+            <h4>Clases Grid</h4>
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">clase CSS</th>
+                  <th scope="col">ancho de la columna</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span>.dc-g20</span></td>
+                  <td>20 %</td>
+                </tr>
+                <tr>
+                  <td><span>.dc-g25</span></td>
+                  <td>25 %</td>
+                </tr>
+                <tr>
+                  <td><span>.dc-g33</span></td>
+                  <td>33.3333 %</td>
+                </tr>
+                <tr>
+                  <td><span>.dc-g38</span></td>
+                  <td>38.2 % </td>
+                </tr>
+                <tr>
+                  <td><span>.dc-g40</span></td>
+                  <td>40 %</td>
+                </tr>
+                <tr>
+                  <td><span>.dc-g50</span></td>
+                  <td>50 %</td>
+                </tr>
+                <tr>
+                  <td><span>.dc-g60</span></td>
+                  <td>60 %</td>
+                </tr>
+                <tr>
+                  <td><span>.dc-g62</span></td>
+                  <td>61.8 % </td>
+                </tr>
+                <tr>
+                  <td><span>.dc-g66</span></td>
+                  <td>66.6666 %</td>
+                </tr>
+                <tr>
+                  <td><span>.dc-g75</span></td>
+                  <td>75 %</td>
+                </tr>
+                <tr>
+                  <td><span>.dc-g80</span></td>
+                  <td>80 %</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+        <!-- VISUALIZACION GRID -->
+        <div class="dc-grid">
+          <div class="dc-g75 dc-grid_der">
+            <div class="dc-grid_box-dere">
+            <h5>Visualización de la Grid</h5>
+            <div class="grid-demo2">
+              <div class="dc-grid">
+                <div class="dc-g20 dc-grid_izq"> 20 % </div>
+                <div class="dc-g80 dc-grid_der"> 80 % </div>
+              </div>
+              <div class="dc-grid">
+                <div class="dc-g25 dc-grid_izq"> 25 % </div>
+                <div class="dc-g75 dc-grid_der"> 75 % </div>
+              </div>
+              <div class="dc-grid">
+                <div class="dc-g33 dc-grid_izq"> 33.333 % </div>
+                <div class="dc-g66 dc-grid_der"> 66.666 % </div>
+              </div>
+              <div class="dc-grid">
+                <div class="dc-g38 dc-grid_izq">  38.2% </div>
+                <div class="dc-g62 dc-grid_der">  61.8% </div>
+              </div>
+              <div class="dc-grid">
+                <div class="dc-g40 dc-grid_izq"> 40 % </div>
+                <div class="dc-g60 dc-grid_der"> 60 % </div>
+              </div>
+              <div class="dc-grid">
+                <div class="dc-g50 dc-grid_izq"> 50 % </div>
+                <div class="dc-g50 dc-grid_der"> 50 % </div>
+              </div>
+              <div class="dc-grid">
+                <div class="dc-g60 dc-grid_izq"> 60 % </div>
+                <div class="dc-g40 dc-grid_der"> 40 % </div>
+              </div>
+              <div class="dc-grid">
+                <div class="dc-g62 dc-grid_izq">  61.8% </div>
+                <div class="dc-g38 dc-grid_der">  38.2% </div>
+              </div>
+              <div class="dc-grid">
+                <div class="dc-g66 dc-grid_izq"> 66.666 % </div>
+                <div class="dc-g33 dc-grid_der"> 33.333 % </div>
+              </div>
+              <div class="dc-grid">
+                <div class="dc-g75 dc-grid_izq"> 75 % </div>
+                <div class="dc-g25 dc-grid_der"> 25 % </div>
+              </div>
+              <div class="dc-grid">
+                <div class="dc-g80 dc-grid_izq"> 80 % </div>
+                <div class="dc-g20 dc-grid_der"> 20 % </div>
+              </div>
+            </div>
+          </div>
+          <!-- GRID INCLUIDAS -->
+          <div class="dc-grid_box-dere"> 
+            <h3>Grids anidadas</h3>
+            <p>Las Grids se pueden anidar en cualquier variación para lograr algun diseño. También se puede combinar o anidar tipos de clases Grid y tipos de clases Columna dentro de un mismo diseños.</p>
+            </br>
+            <div class="grid-demo1">
+              <div class="dc-grid">
+                <div class="dc-g50 dc-grid_izq">
+                  <div class="dc-grid_box">50 %</div>
+                  <div class="dc-grid">
+                    <div class="dc-g50 dc-grid_izq"><div class="dc-grid_box">50 %</div></div>
+                    <div class="dc-g50 dc-grid_der"><div class="dc-grid_box">50 %</div></div>
+                  </div>
+                </div>
+                <div class="dc-g50 dc-grid_der"><div class="dc-grid_box">50 %</div>
+                  <div class="dc-grid">
+                    <div class="dc-g33 dc-grid_izq"><div class="dc-grid_box">33.333 %</div></div>
+                    <div class="dc-g33 dc-grid_izq"><div class="dc-grid_box">33.333 %</div></div>
+                    <div class="dc-g33 dc-grid_der"><div class="dc-grid_box"> 33.333 %</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- FORMULARIOS -->
+    <article>
+      <!-- INFORMACION DE LOS ESTILOS DE CLASES PARA FORMS -->
+      <h2 id="dancar-formularios" class="dc-arriba_box">Opciones de estilos para formularios</h2>
+      <div class="dc-grid">
+        <div class="dc-g25 dc-grid_izq">
+          <div class="dc-grid_box">
+            <p>Hay un estilo predeterminado lineal (apilado, 60% ancho de elementos de formulario) y el estilo del 100% del ancho del contenedor con la clase dc-full.</p>
+          </div>
+        </div>
+        <div class="dc-g75 dc-grid_der">
+          <div class="dc-columna_box">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">clases CSS</th>
+                  <th scope="col">Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="nowrap">por default</td>
+                  <td> El ancho de todos los elementos del formulario se acomodan al 60% del ancho del formulario.</td>
+                </tr>
+                <tr>
+                  <td class="nowrap"><span>.dc-full</span></td>
+                  <td>El ancho de todos los elementos de formulario se acomodan al 100% de ancho. Este estilo de formulario es especialmente útil para formularios pequeños.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- EJEMPLO FORMULARIO -->
+        <div class="dc-g75 dc-grid_der">
+          <div class="dc-grid_box-dere">
+
+            <h4>Ejemplo de Formulario</h4>
+            <form id="demo-form1" class="dc-form">
+              <h6 class=" dc-form_box-heading">Campos de Texto y cajas de simple seleccion</h6>
+
+              <div class="dc-form_box dc-form_box-select">
+                <label for="salutation">saludo</label>
+                <select name="salutation" id="salutation" size="1" required="">
+                  <option value="0" selected="selected" disabled="disabled">Por favor selecioné una opcion</option>
+                  <option value="Mr.">Señor.</option>
+                  <option value="Ms.">Señora.</option>
+                  <option value="Mrs.">Señorita.</option>
+                </select>
+              </div>
+              <div class="dc-form_box dc-form_box-text">
+                <label for="primernombre">primer nombre</label>
+                <input type="text" name="primernombre" id="primernombre" size="20" />
+              </div>
+              <h6 class="dc-form_box-heading">Errores y campos requiridos</h6>
+              <div class="dc-form_box dc-form_box-text dc-error"  aria-live="assertive">
+                <p class="dc-mensaje">El campo apellido debe ser llenado</p>
+                <label for="apellido">Apellido <sup class="dc-requerido" title="este campo es obligatorio">*</sup></label>
+                <input type="text" name="apellido" id="apellido" size="20"  required=""/>
+              </div>
+
+              <h6 class="dc-form_box-heading">Formulario con elementos contenidos en rejillas</h6>
+              <div class="dc-form_box">
+                <span class="dc-label">Elementos en linea Contenidos en rejillas</span>
+                <div class="dc-cubrimiento-form_box dc-grid">
+                  <div class="dc-g20 dc-grid_izq">
+                    <div class="dc-grid_box-izq dc-form_box-text">
+                      <input value=".dc-g20" type="text" name="inline1" id="inline1" size="20" />
+                    </div>
+                  </div>
+                  <div class="dc-g80 dc-grid_der">
+                    <div class="dc-grid_box-dere dc-form_box-select">
+                      <select name="select1" id="select1"><option value="">.dc-g80</option></select>
+                    </div>
+                  </div>
+                </div>
+                <div class="dc-cubrimiento-form_box dc-grid">
+                  <div class="dc-g25 dc-grid_izq">
+                    <div class="dc-grid_box-izq dc-form_box-text">
+                      <input value=".dc-g25" type="text" name="inline2" id="inline2" size="20" />
+                    </div>
+                  </div>
+                  <div class="dc-g75 dc-grid_der">
+                    <div class="dc-grid_box-dere dc-form_box-select">
+                      <select name="select2" id="select2"><option value="">.dc-g75</option></select>
+                    </div>
+                  </div>
+                </div>
+                <div class="dc-cubrimiento-form_box dc-grid">
+                  <div class="dc-g33 dc-grid_izq">
+                    <div class="dc-grid_box-izq dc-form_box-text">
+                      <input value=".dc-g33" type="text" name="inline3" id="inline3" size="20" />
+                    </div>
+                  </div>
+                  <div class="dc-g66 dc-grid_der">
+                    <div class="dc-grid_box-dere dc-form_box-select">
+                      <select name="select3" id="select3"><option value="">.dc-g66</option></select>
+                    </div>
+                  </div>
+                </div>
+                <div class="dc-cubrimiento-form_box dc-grid">
+                  <div class="dc-g38 dc-grid_izq">
+                    <div class="dc-grid_box-izq dc-form_box-text">
+                      <input value=".dc-g38" type="text" name="inline4" id="inline4" size="20" />
+                    </div>
+                  </div>
+                  <div class="dc-g62 dc-grid_der">
+                    <div class="dc-grid_box-dere dc-form_box-select">
+                      <select name="select4" id="select4"><option value="">.dc-g62</option></select>
+                    </div>
+                  </div>
+                </div>
+                <div class="dc-cubrimiento-form_box dc-grid">
+                  <div class="dc-g40 dc-grid_izq">
+                    <div class="dc-grid_box-izq dc-form_box-text">
+                      <input value=".dc-g40" type="text" name="inline5" id="inline5" size="20" />
+                    </div>
+                  </div>
+                  <div class="dc-g60 dc-grid_der">
+                    <div class="dc-grid_box-dere dc-form_box-select">
+                      <select name="select5" id="select5"><option value="">.dc-g60</option></select>
+                    </div>
+                  </div>
+                </div>
+                <div class="dc-cubrimiento-form_box dc-grid">
+                  <div class="dc-g50 dc-grid_izq">
+                    <div class="dc-grid_box-izq dc-form_box-text">
+                      <input value=".dc-g50" type="text" name="inline6" id="inline6" size="20" />
+                    </div>
+                  </div>
+                  <div class="dc-g50 dc-grid_der">
+                    <div class="dc-grid_box-dere dc-form_box-select">
+                      <select name="select6" id="select6"><option value="">.dc-g50</option></select>
+                    </div>
+                  </div>
+                </div>
+                <div class="dc-cubrimiento-form_box dc-grid">
+                  <div class="dc-g60 dc-grid_izq">
+                    <div class="dc-grid_box-izq dc-form_box-text">
+                      <input value=".dc-g60" type="text" name="inline7" id="inline7" size="20" />
+                    </div>
+                  </div>
+                  <div class="dc-g40 dc-grid_der">
+                    <div class="dc-grid_box-dere dc-form_box-select">
+                      <select name="select7" id="select7"><option value="">.dc-g40</option></select>
+                    </div>
+                  </div>
+                </div>
+                <div class="dc-cubrimiento-form_box dc-grid">
+                  <div class="dc-g62 dc-grid_izq">
+                    <div class="dc-grid_box-izq dc-form_box-text">
+                      <input value=".dc-g62" type="text" name="inline8" id="inline8" size="20" />
+                    </div>
+                  </div>
+                  <div class="dc-g38 dc-grid_der">
+                    <div class="dc-grid_box-dere dc-form_box-select">
+                      <select name="select8" id="select8"><option value="">.dc-g38</option></select>
+                    </div>
+                  </div>
+                </div>
+                <div class="dc-cubrimiento-form_box dc-grid">
+                  <div class="dc-g66 dc-grid_izq">
+                    <div class="dc-grid_box-izq dc-form_box-text">
+                      <input value=".dc-g66" type="text" name="inline9" id="inline9" size="20" />
+                    </div>
+                  </div>
+                  <div class="dc-g33 dc-grid_der">
+                    <div class="dc-grid_box-dere dc-form_box-select">
+                      <select name="select9" id="select9"><option value="">.dc-g33</option></select>
+                    </div>
+                  </div>
+                </div>
+                <div class="dc-cubrimiento-form_box dc-grid">
+                  <div class="dc-g75 dc-grid_izq">
+                    <div class="dc-grid_box-izq dc-form_box-text">
+                      <input value=".dc-g75" type="text" name="inline10" id="inline10" size="20" />
+                    </div>
+                  </div>
+                  <div class="dc-g25 dc-grid_der">
+                    <div class="dc-grid_box-dere dc-form_box-select">
+                      <select name="select10" id="select10"><option value="">.dc-g25</option></select>
+                    </div>
+                  </div>
+                </div>
+                <div class="dc-cubrimiento-form_box dc-grid">
+                  <div class="dc-g80 dc-grid_izq">
+                    <div class="dc-grid_box-izq dc-form_box-text">
+                      <input value=".dc-g80" type="text" name="inline11" id="inline11" size="20" />
+                    </div>
+                  </div>
+                  <div class="dc-g20 dc-grid_der">
+                    <div class="dc-grid_box-dere dc-form_box-select">
+                      <select name="select11" id="select11"><option value="">.dc-g20</option></select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dc-form_box">
+                <span class="dc-label">Elementos y etiquitas dentro de un rejilla con envoltura</span>
+                <div class="dc-cubrimiento-form_box dc-grid">
+                  <div class="dc-g33 dc-grid_izq">
+                    <div class="dc-grid_box-izq dc-form_box-check">
+                      <input type="checkbox" name="check1" id="check1" />
+                      <label for="check1">label del checkbox</label>
+                    </div>
+                  </div>
+                  <div class="dc-g33 dc-grid_izq">
+                    <div class="dc-grid_box dc-form_box-check">
+                      <input type="checkbox" name="check2" id="check2" />
+                      <label for="check2">Label del checkbox</label>
+                    </div>
+                  </div>
+                  <div class="dc-g33 dc-grid_der">
+                    <div class="dc-grid_box-dere dc-form_box-check">
+                      <input type="checkbox" name="check3" id="check3" />
+                      <label for="check3">Label del checkbox</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dc-form_box">
+                <div class="dc-cubrimiento-form_box dc-grid">
+                  <div class="dc-g33 dc-grid_izq">
+                    <div class="dc-grid_box-izq dc-form_box-text">
+                      <label for="city">Ciudad</label>
+                      <input type="text" name="city" id="city" size="20" />
+                    </div>
+                  </div>
+                  <div class="dc-g33 dc-grid_izq">
+                    <div class="dc-grid_box dc-form_box-text">
+                      <label for="mun">Municipio</label>
+                      <input type="text" name="mun" id="mun" size="20" />
+                    </div>
+                  </div>
+                  <div class="dc-g33 dc-grid_der">
+                    <div class="dc-grid_box-dere dc-form_box-text">
+                      <label for="pais">Pais</label>
+                      <select name="pais" id="pais"><option value="">Opcion del select</option></select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dc-form_box">
+                <span class="dc-label">Uso Combinado</span>
+                <div class="dc-cubrimiento-form_box dc-grid">
+                  <div class="dc-g33 dc-grid_izq">
+                    <div class="dc-grid_box-izq dc-form_box-check">
+                      <input type="checkbox" name="combi1" id="combi1" />
+                      <label for="combi1">dc-g33</label>
+                    </div>
+                  </div>
+                  <div class="dc-g33 dc-grid_izq">
+                    <div class="dc-grid_box dc-form_box-text">
+                      <input type="text" value="dc-g33" name="combi2" id="combi2" size="20" />
+                    </div>
+                  </div>
+                  <div class="dc-g33 dc-grid_der">
+                    <div class="dc-grid_box-dere dc-form_box-select">
+                      <select name="combi3" id="combi3"><option value="">dc-g33</option></select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dc-form_box">
+                <span class="dc-label">Elementos de formulario en linea</span>
+                <div class="dc-cubrimiento-form_box">
+                  <p>acá hay un input en linea <input type="text" class="dc-inline" value="" size="5" /> con un un parrafo.</p>
+                </div>
+              </div>
+              <h6 class="dc-form_box-heading">Text Areas, Checkboxes, inputs tipos Radio y botones</h6>
+              <div class="dc-form_box dc-form_box-text">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="7"></textarea>
+              </div>
+              <div class="dc-form_box dc-form_box-check">
+                <input type="checkbox" name="respuesta" id="respuesta" />
+                <label for="respuesta">Recibir respuestas al correo</label>
+              </div>
+              <div class="dc-form_box">
+                <span class="dc-label">Inputs tipo radio con Labels</span>
+                <div class="dc-cubrimiento-form_box">
+                  <div class="dc-form_box-check">
+                    <input type="radio" name="vote" value="Option 1" id="vote1" />
+                    <label for="vote1">Opcion 1</label>
+                  </div>
+                  <div class="dc-form_box-check">
+                    <input type="radio" name="vote" id="vote2" />
+                    <label for="vote2">Opcion 2</label>
+                  </div>
+                  <div class="dc-form_box-check">
+                    <input type="radio" name="vote" id="vote3" />
+                    <label for="vote3">Opcion 3</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dc-form_box-footer dc-form_box-button">
+                <button type="submit" class="dc-positivo" id="boton_personalizado">boton enviar</button>
+                <input type="submit" value="Enviar"  class="dc-ok" id="submit"/>
+                <input type="reset" value="Borrar" class="" id="reset"/>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- TIPOS DE BOTON Y TAMAÑOS DE BOTONES -->
+        <div class="dc-g75 dc-grid_der">
+          <div class="dc-grid_box-dere">
+            <h4>Tipos de Botones</h4>
+            <p>Los estilos de botones se pueden aplicar a cualquier elemento utilizando las siguientes clases.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Botón</th>
+                  <th>Clase</th>
+                  <th>Descripcion</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><button class="dc-boton">Por defecto</button></td>
+                  <td><span>dc-boton</span></td>
+                  <td>estilo de botón por defecto</td>
+                </tr>
+                <tr>
+                  <td><button class="dc-boton dc-ok">Azul</button></td>
+                  <td><span>dc-boton dc-ok</span></td>
+                  <td>estilo de boton color azul</td>
+                </tr>
+                <tr>
+                  <td><button class="dc-boton dc-positivo">positivo</button></td>
+                  <td><span>dc-boton dc-positivo</span></td>
+                  <td>estilo de color verde</td>
+                </tr>
+                <tr>
+                  <td><button class="dc-boton dc-peligro">Peligro</button></td>
+                  <td><span>dc-boton dc-peligro</span></td>
+                  <td>estilo de color rojo</td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Tamaño de botones</h4>
+            <p>los tamaños de colores y los estilos anteriores pueden ser combinados, de acuerdo a la siguiente tabla</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Botón</th>
+                  <th>Clase</th>
+                  <th>Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><button class="dc-boton dc-largo">Botón por defecto</button></td>
+                  <td><span>dc-boton dc-largo</span></td>
+                  <td>tamaño grande del botón</td>
+                </tr>
+                <tr>
+                  <td><button class="dc-boton">Botón por defecto</button></td>
+                  <td><span>dc-boton</span></td>
+                  <td>tamaño del botón por defecto</td>
+                </tr>
+                <tr>
+                  <td><button class="dc-boton dc-peque">Botón por defecto</button></td>
+                  <td><span>dc-boton dc-peque</span></td>
+                  <td>Botón en tamaño más pequeño</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+        <!-- NAVS -->
+    <article>
+      <div class="dc-grid">
+        <h2 id="dancar-navigacion" class="dc-arriba_box">Navegación</h2>
+        <p>En la columna de la izquierda encontrará un ejemplo para una navegación vertical, en la columna de la derecha una para una navegación horizontal. El cuadro con pestañas muestra el marcado predeterminado para ambos ejemplos.</p> </br>
+          <div class="dc-grid ">
+            <div class="dc-g25 dc-grid_izq">
+              <div class="dc-grid_box-izq">
+                <h3>Navegación Vertical</h3>
+                  <nav class="dc-vert_nav">
+                    <h6 >Titulo Opcional</h6>
+                    <ul>
+                      <li><a href="#">Elemento 1</a></li>
+                      <li><a href="#">Elemento 2</a></li>
+                      <li><span>Elemento 3 Abierto</span>
+                      <ul>
+                        <li><a href="#">Elemento 3.1</a></li>
+                        <li class="active"><a>Elemento 3.2 Activo</a></li>
+                        <li><a href="#">Elemento 3.3</a></li>
+                      </ul>
+                      </li>
+                      <li><a href="#">Elemento 4</a></li>
+                      <li><a href="#">Elemento 5</a></li>
+                    </ul>
+                  </nav>
+                </div>
+             </div>
+            <div class="dc-g75 dc-grid_der">
+              <div class="dc-grid_box-dere">
+                <h3>Navegación Horizontal</h3>
+                <div class="nav-wrapper">
+                  <nav class="dc-hori_nav">
+                    <ul>
+                      <li class="active"><a>activo</a></li>
+                      <li><a href="#">Link</a></li>
+                      <li><a href="#">Link</a></li>
+                      <li><a href="#">Link</a></li>
+                      <li><a href="#">Link</a></li>
+                    </ul>
+                    <form class="dc-busque_form">
+                      <input class="dc-campo_busque" type="text" placeholder="Buscar..." />
+                      <input class="dc-boton_buscar" type="submit" value="Buscar" />
+                    </form>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </article>  
+        
+    <!-- OTROS ESTILOS -->
+    <article>
+      <h2 id="dancar-tipografia" class="dc-arriba_box">Otros estilos</h2>
+      <div class="dc-grid">
+        <!-- LISTAS -->
+        <div class="dc-g25 dc-grid_izq">
+          <div class="dc-grid_box-izq">
+            <h3>Listas</h3>
+          </div>
+        </div>
+        <div class="dc-g75 dc-grid_der">
+          <div class="dc-grid_box-dere">
+            <div class="dc-grid">
+              <div class="dc-g50 dc-grid_izq">
+                <div class="dc-grid_box-izq">
+                  <h4>Lista Desordenada</h4>
+                  <ul>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2
+                      <ul>
+                      <li>Sub elemento de 2</li>
+                      <li>Sub elemento de 2</li>
+                      <li>Sub elemento de 2</li>
+                      <li>Sub elemento de 2</li>
+                      </ul>
+                    </li>
+                    <li>Elemento 3</li>
+                    <li>Elemento 4</li>
+                    <li>Elemento 1</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="dc-g50 dc-grid_izq">
+                <div class="dc-grid_box">
+                  <h4>Lista Ordenada</h4>
+                  <ol>
+                    <li>Elemento 1
+                      <ol>
+                      <li>Sub elemento de 1</li>
+                      <li>Sub elemento de 1</li>
+                      <li>Sub elemento de 1</li>
+                      <li>Sub elemento de 1</li>
+                      </ol>
+                    </li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                    <li>Elemento 4</li>
+                    <li>Elemento 5</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ALINEACION DE ELEMTNOS FLOTANTES -->
+        <div class="dc-grid ">
+          <div class="dc-g25 dc-grid_izq">
+            <div class="dc-grid_box-izq">
+              <h3>Orden horizontal de elementos con estilo float</h3>
+            </div>
+          </div>
+          <div class="dc-g75 dc-grid_der">
+            <div class="dc-grid_box-dere">
+              <div class="dc-grid">
+                <div class="dc-g33 dc-grid_izq">
+                  <div class="dc-grid_box-izq">
+                    <h4>Flotar a la Izquierda</h4>
+                    
+                    <img src="http://dummyimage.com/150x100/cccccc/fff.png" class="flexible bordered float-izq" />
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                  </div>
+                </div>
+                <div class="dc-g33 dc-grid_izq">
+                  <div class="dc-grid_box">
+                    <h4>Centrado</h4>
+                    
+                    <p><img src="http://dummyimage.com/150x100/cccccc/fff.png" class="flexible bordered centro" /></p>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                  </div>
+                </div>
+                <div class="dc-g33 dc-grid_der">
+                  <div class="dc-grid_box-dere">
+                    <h4>flotar a la derecha</h4>
+
+                    <img src="http://dummyimage.com/150x100/cccccc/fff.png" class="flexible bordered float-dere" />
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TABLAS -->
+        <div class="dc-grid">
+          <div class="dc-g25 dc-grid_izq">
+            <div class="dc-grid_box-izq">
+              <h3>Estilos por defecto de las tablas</h3>  
+              <p>El estilo predeterminado para las tablas son celdas alineadas y un conjunto mínimo de bordes. el estilo de las tablas se establece en la etiqueta html "< table>".</p>
+            </div>
+          </div>
+          <div class="dc-g75 dc-grid_der">
+            <div class="dc-grid_box-dere">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Id</th>
+                    <th>Nombre del Producto </th>
+                    <th>Precio</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Lápiz</td>
+                    <td>$ 700</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Borradores</td>
+                    <td>$ 1000</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p>Un estilo de tabla clásico de tabla se puede lograr con la clase CSS<span>.borde_table</span></p>
+              <table class="borde_table">
+                <thead>
+                  <tr>
+                    <th>Id</th>
+                    <th>Nombre del Producto </th>
+                    <th>Precio</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Lápiz</td>
+                    <td>$ 700</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Borradores</td>
+                    <td>$ 1000</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>Ambos estilos de tabla se pueden combinar con la clase CSS .estrecha para lograr filas de tabla más pequeñas (especialmente útil para tablas grandes)</p>
+              <table class="borde_table estrecha">
+                <thead>
+                  <tr>
+                    <th>Id</th>
+                    <th>Nombre del Producto </th>
+                    <th>Precio</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Lápiz</td>
+                    <td>$ 700</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Borradores</td>
+                    <td>$ 1000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<script src="DANCAR/base/jquery.min.js"></script>
+<script src="DANCAR/base/archivo_base.js"></script>
+</Body>
+</Html>
